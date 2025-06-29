@@ -1,0 +1,262 @@
+@media (max-width: 768px) {
+  .nav-links,
+  .nav-actions {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #d3d3d3;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+    margin-right: 150px;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+
+  #nav-toggle:checked ~ .nav-links,
+  #nav-toggle:checked ~ .nav-actions {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  #nav-toggle:checked + .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #nav-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #nav-toggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+ 
+  .nav-links {
+    transform: none;
+    left: 0;
+  }
+ }
+/* hero-section */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .hero-form {
+    justify-content: center;
+  }
+
+  .features {
+    justify-content: center;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-form input {
+    width: 100%;
+  }
+
+  .hero-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-form button {
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 20em;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand-logos img {
+    height: 60px;
+    width: auto;
+  }
+
+  .hero-image .instagram-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* third-section */
+@media (max-width: 768px) {
+  .third-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .third-text h1 {
+    font-size: 28px;
+  }
+
+  .third-text ul {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+  .third-image img{
+    margin-right: 90px;
+  }
+}
+/* seventh-section */
+@media (max-width: 768px) {
+  .seventh-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .seventh-left, .seventhright-img {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .seventhright-img img {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+/* eight-section */
+@media (max-width: 768px) {
+  .eight-heading {
+    font-size: 1.5rem;
+  }
+
+  .eight-paragraph {
+    font-size: 0.95rem;
+  }
+
+  .eight-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eight-buttons button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+/* ninth-section */
+@media (max-width: 768px) {
+  .ninth-overlay-layer {
+    padding: 15px;
+    align-items: flex-start;
+  }
+
+  .ninth-instruction-card {
+    padding: 15px;
+    height: auto;
+
+  }
+  
+
+  .ninth-tab-buttons {
+    gap: 10px;
+  }
+
+  .ninth-tab-buttons span {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .ninth-iframe-wrapper iframe {
+    height: 160px;
+  }
+
+  .ninth-instruction-text {
+    font-size: 13px;
+  }
+
+  .ninth-code-box {
+    font-size: 12px;
+  }
+
+  .ninth-copy-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .ninth-help-link {
+    font-size: 11px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .ninth-instruction-card {
+    max-width: 70%;
+    width: 250px;
+    height: 300;
+  }
+
+  .ninth-overlay-background img {
+    width: 100%;
+  }
+}
+/* tenth-section */
+@media (max-width: 992px) {
+  .tenth-images-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tenth-images-container img {
+    width: 90%;
+    height: auto;
+  }
+}
+/* sixteen */
+@media (max-width: 600px) {
+  .sixteen {
+    padding: 30px 15px;
+  }
+
+  .sixteen img {
+    max-width: 90%;
+    height: auto;
+  }
+}
