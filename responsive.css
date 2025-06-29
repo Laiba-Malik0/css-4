@@ -205,6 +205,7 @@
 
   .ninth-iframe-wrapper iframe {
     height: 160px;
+
   }
 
   .ninth-instruction-text {
@@ -248,6 +249,10 @@
     width: 90%;
     height: auto;
   }
+
+.twelveth-iframe-wrapper{
+  width: 300px;
+}
 }
 /* sixteen */
 @media (max-width: 600px) {
